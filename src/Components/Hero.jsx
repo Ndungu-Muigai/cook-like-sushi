@@ -87,7 +87,6 @@ const Hero = () =>
 
                         {/* TYPEWRITER */}
                         <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base sm:text-xl md:text-2xl text-green-800 mb-6 font-medium h-10 flex items-center justify-center md:justify-start gap-2">
-                            <span className="text-green-700">We offer</span>
                             <span className="text-green-900 font-semibold">{typed}</span>
                             <span className="w-2 h-5 bg-green-900 animate-pulse rounded-sm" />
                         </motion.p>
