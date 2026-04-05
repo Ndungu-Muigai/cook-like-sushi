@@ -5,7 +5,7 @@ import Logo from "../assets/Logo.png"
 const About = ({handleMouseMove, spot}) => 
 {
     return (
-        <section id="about" className="relative min-h-screen flex items-center justify-between bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden px-2 sm:px-6 pt-14" onMouseMove={handleMouseMove}>
+        <section id="about" className="relative min-h-screen flex items-center justify-between bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden px-2 sm:px-6 pt-18 md:pt-14" onMouseMove={handleMouseMove}>
             {/* Noise */}
             <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{backgroundImage: "url('https://grainy-gradients.vercel.app/noise.svg')"}}/>
 
@@ -24,7 +24,7 @@ const About = ({handleMouseMove, spot}) =>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: false }} className="relative z-10 w-full">
                 <div className="grid md:grid-cols-2 gap-2 items-center">
                     {/* LOGO */}
-                    <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }} whileHover={{ rotateX: 6, rotateY: -6 }} className="relative flex justify-center order-1 md:order-1">
+                    <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }} whileHover={{ rotateX: 6, rotateY: -6 }} className="relative hidden md:flex md:justify-center order-1 md:order-1">
                         {/* Strong glow */}
                         <div className="absolute -inset-10 bg-green-500/40 blur-3xl rounded-full" />
                         {/* Card */}

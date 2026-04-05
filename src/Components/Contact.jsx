@@ -93,7 +93,7 @@ const Contact = ({ handleMouseMove, spot }) =>
   ]
 
   return (
-    <section id="contact" className="relative min-h-screen py-6 sm:py-20 px-4 sm:px-6 bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden" onMouseMove={handleMouseMove}>
+    <section id="contact" className="relative min-h-screen pt-18 md:pt-14 px-4 sm:px-6 bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden" onMouseMove={handleMouseMove}>
       {/* Noise */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{backgroundImage: "url('https://grainy-gradients.vercel.app/noise.svg')"}}/>
 
