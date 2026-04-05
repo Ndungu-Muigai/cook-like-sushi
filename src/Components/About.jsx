@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.png"
 const About = ({handleMouseMove, spot}) => 
 {
     return (
-        <section className="relative min-h-screen flex items-center justify-between bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden px-2 sm:px-6" onMouseMove={handleMouseMove}>
+        <section id="about" className="relative min-h-screen flex items-center justify-between bg-linear-to-br from-green-100 via-emerald-200 to-green-300 text-green-900 overflow-hidden px-2 sm:px-6 pt-14" onMouseMove={handleMouseMove}>
             {/* Noise */}
             <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{backgroundImage: "url('https://grainy-gradients.vercel.app/noise.svg')"}}/>
 
@@ -50,7 +50,7 @@ const About = ({handleMouseMove, spot}) =>
                             Whether you're looking to improve your daily meal prep, discover new healthy recipes, or learn hands-on cooking techniques, we're here to guide you every step of the way. Eat well, live well, and love every bite with Cook Like Sushi.
                         </motion.p>
 
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.9 }} viewport={{ once: false }} className="grid grid-cols-2 gap-3 sm:gap-4">
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.9 }} viewport={{ once: false }} className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
                             <div className="bg-white/80 backdrop-blur-sm border border-green-200 rounded-xl p-3 sm:p-4">
                                 <span className="text-2xl sm:text-3xl font-bold text-green-600">{new Date().getFullYear() - 2026}+</span>
                                 <p className="text-green-700 text-xs sm:text-sm">Years of Service</p>

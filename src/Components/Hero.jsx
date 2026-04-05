@@ -83,7 +83,7 @@ const Hero = ({handleMouseMove, spot}) =>
 
                         {/* CTA */}
                         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
-                            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="#" className="btn bg-green-700 hover:bg-green-800 text-white border-none px-8 shadow-xl shadow-green-700/40"> Get Started</motion.a>
+                            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="#about" className="btn bg-green-400 hover:bg-green-800 text-white border-none px-8 shadow-xl shadow-green-700/40"> Get Started</motion.a>
                         </motion.div>
                     </div>
 
