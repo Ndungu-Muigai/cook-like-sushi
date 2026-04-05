@@ -8,21 +8,11 @@ const titles = [
   "In-home cooking experience"
 ]
 
-const Hero = () => 
+const Hero = ({handleMouseMove, spot}) => 
 {
-    const [spot, setSpot] = useState({ x: 0, y: 0 })
-
     const [typed, setTyped] = useState("")
     const [titleIndex, setTitleIndex] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)
-
-    const handleMouseMove = (e) => 
-    {
-        const { clientX, clientY, currentTarget } = e
-        const rect = currentTarget.getBoundingClientRect()
-
-        setSpot({x: clientX - rect.left, y: clientY - rect.top, })
-    }
+    const [isDeleting, setIsDeleting] = useState(false)   
 
     useEffect(() => 
     {
