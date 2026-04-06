@@ -4,18 +4,18 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
 
+import { FaInstagram } from "react-icons/fa"
 import { FaPhoneVolume } from "react-icons/fa6"
+import { BsTwitterX } from "react-icons/bs"
 import { HiOutlineMail } from "react-icons/hi"
 import { MdLocationOn } from "react-icons/md"
-import { FaInstagram } from "react-icons/fa"
-import { BsTwitterX } from "react-icons/bs";
-
 
 const Contact = ({ handleMouseMove, spot }) =>
 {
   //State to check if the message is being sent
   const [isSending, setIsSending] = useState(false)
 
+  //State to hold form data for name, email, subject, and message
   const [formData, setFormData] = useState(
   {
     name: "",
@@ -24,9 +24,12 @@ const Contact = ({ handleMouseMove, spot }) =>
     message: ""
   })
 
+  //Handle form submission, send email using EmailJS, and show success/error notifications
   const handleSubmit = e =>
   {
     e.preventDefault()
+
+    //Constructing the data object to match EmailJS template variables
     const newFormData =
     {
       name: formData.name,
@@ -34,7 +37,11 @@ const Contact = ({ handleMouseMove, spot }) =>
       subject: formData.subject,
       message: formData.message
     }
+
+    //Set sending state to true to disable the button and show loading state
     setIsSending(true)
+
+    //Send the email using EmailJS
     emailjs.send("service_g7mlrw8", "template_lppq4qz", newFormData, "YZfD8aXcQI9Qwai9L")
     .then((result) =>
     {
@@ -50,11 +57,13 @@ const Contact = ({ handleMouseMove, spot }) =>
     .finally(() => setIsSending(false))
   }
 
+  //Handle form input changes and update the formData state
   const handleChange = e =>
   {
     setFormData({...formData, [e.target.name]: e.target.value })
   }
 
+  //Contact information with icons, titles, values, and links
   const contactInfo = [
     {
       icon: (
@@ -81,6 +90,7 @@ const Contact = ({ handleMouseMove, spot }) =>
     },
   ]
 
+  //Social media links with icons, names, and URLs
   const socialLinks = [
     {
       name: "Twitter",
