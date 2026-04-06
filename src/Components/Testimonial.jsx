@@ -5,24 +5,34 @@ const Testimonial = ({ handleMouseMove, spot }) =>
 {
     const testimonials = [
         {
-            name: "Sarah Johnson",
-            role: "Home Chef",
-            quote: "Cook Like Sushi transformed my approach to healthy eating. Their meal plans are delicious and easy to follow!"
+            name: "Wanjiku Mwangi",
+            role: "Home Cook",
+            quote: "Cook Like Sushi completely changed how I prepare meals at home. The recipes are simple, healthy, and absolutely delicious!"
         },
         {
-            name: "Mike Chen",
+            name: "Brian Otieno",
             role: "Fitness Enthusiast",
-            quote: "The in-home cooking experience was incredible. I learned so much about nutrition and meal prep!"
+            quote: "Their meal plans helped me stay consistent with my fitness goals. Eating healthy has never been this enjoyable."
         },
         {
-            name: "Emily Davis",
+            name: "Amina Hassan",
             role: "Busy Professional",
-            quote: "I never thought healthy cooking could be this convenient. Cook Like Sushi's services have been a game-changer for my lifestyle!"
+            quote: "With my tight schedule, their meal prep service has been a lifesaver. I now eat well without the stress of cooking every day."
         },
         {
-            name: "David Lee",
-            role: "Food Blogger",
-            quote: "As a food blogger, I'm always looking for new recipes. Cook Like Sushi's nutrition guides have inspired some of my best content!"
+            name: "Kevin Kariuki",
+            role: "Food Content Creator",
+            quote: "I’ve discovered so many creative meal ideas through Cook Like Sushi. It’s a great source of inspiration for my content!"
+        },
+        {
+            name: "Faith Njeri",
+            role: "Working Mum",
+            quote: "Balancing work and family is tough, but their meal plans make it so much easier to keep my family eating healthy."
+        },
+        {
+            name: "Allan Kiptoo",
+            role: "Entrepreneur",
+            quote: "The in-home cooking experience was amazing. I learned practical skills that I now use every week in my kitchen."
         }
     ]
     return (
